@@ -1,10 +1,13 @@
 extends Node
 
+class_name v_pet
+
 @export var needs :  Dictionary = {
 	"happiness": 5,
 	
 }
 var is_alive = true
+
 
 
 
