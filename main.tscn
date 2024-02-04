@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8ro4crvr08tn"]
+
+[ext_resource type="PackedScene" uid="uid://ck5ciw11y8ksd" path="res://V-Pet/v_pet.tscn" id="1_htlpd"]
+
+[node name="Main" type="Node"]
+
+[node name="VPet" parent="." instance=ExtResource("1_htlpd")]
