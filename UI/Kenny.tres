@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://c72m8u2jhy782"]
+
+[ext_resource type="FontFile" uid="uid://47hi4q3akdst" path="res://UI/kenney_ui-pack/Font/kenvector_future.ttf" id="1_atenu"]
+
+[sub_resource type="FontVariation" id="FontVariation_tacgh"]
+base_font = ExtResource("1_atenu")
+
+[resource]
+default_font = SubResource("FontVariation_tacgh")
