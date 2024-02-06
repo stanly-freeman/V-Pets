@@ -18,8 +18,7 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=648
+window/size/resizable=false
+window/size/borderless=true
 window/size/always_on_top=true
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/vrm/plugin.cfg")
