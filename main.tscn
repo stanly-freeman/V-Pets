@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8ro4crvr08tn"]
+[gd_scene load_steps=3 format=3 uid="uid://c8ro4crvr08tn"]
 
 [ext_resource type="PackedScene" uid="uid://ck5ciw11y8ksd" path="res://V-Pet/v_pet.tscn" id="1_htlpd"]
+
+[sub_resource type="Environment" id="Environment_g3qms"]
+background_mode = 1
+fog_enabled = true
+fog_light_color = Color(1, 1, 1, 1)
 
 [node name="Main" type="Node"]
 
@@ -13,3 +18,6 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.979223, 0.202787, 0, -0.202787, 0.979223, 0, 1.155, 1.399)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_g3qms")
