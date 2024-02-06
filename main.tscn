@@ -4,4 +4,12 @@
 
 [node name="Main" type="Node"]
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.414693, -0.724811, 0.550162, 0, 0.604599, 0.79653, -0.909961, -0.330316, 0.250723, 0, 0, 0)
+light_color = Color(0.901961, 0.901961, 0.901961, 1)
+shadow_enabled = true
+
 [node name="VPet" parent="." instance=ExtResource("1_htlpd")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.979223, 0.202787, 0, -0.202787, 0.979223, 0, 1.155, 1.399)
