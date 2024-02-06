@@ -1,8 +1,12 @@
-[gd_resource type="Theme" load_steps=9 format=3 uid="uid://c72m8u2jhy782"]
+[gd_resource type="Theme" load_steps=14 format=3 uid="uid://c72m8u2jhy782"]
 
 [ext_resource type="FontFile" uid="uid://47hi4q3akdst" path="res://UI/kenney_ui-pack/Font/kenvector_future.ttf" id="1_atenu"]
 [ext_resource type="Texture2D" uid="uid://bei76psl57p6k" path="res://UI/kenney_ui-pack/PNG/blue_button04.png" id="2_1sjpd"]
 [ext_resource type="Texture2D" uid="uid://bq3t3lix1j6gf" path="res://UI/kenney_ui-pack/PNG/blue_button02.png" id="3_06xv2"]
+[ext_resource type="Texture2D" uid="uid://c8xjf0nd8rl76" path="res://UI/kenney_ui-pack/PNG/blue_panel.png" id="4_5xjp2"]
+[ext_resource type="Texture2D" uid="uid://0vj51i3hwphm" path="res://UI/kenney_ui-pack/PNG/blue_boxTick.png" id="4_q0a1m"]
+[ext_resource type="Texture2D" uid="uid://f3qrqcikqkm3" path="res://UI/kenney_ui-pack/PNG/grey_boxTick.png" id="5_3v6gf"]
+[ext_resource type="Texture2D" uid="uid://bk5sc5h4d68ah" path="res://UI/kenney_ui-pack/PNG/blue_button06.png" id="6_lg176"]
 
 [sub_resource type="FontVariation" id="FontVariation_tacgh"]
 base_font = ExtResource("1_atenu")
@@ -27,11 +31,18 @@ expand_margin_top = 1.0
 expand_margin_right = 1.0
 expand_margin_bottom = 1.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tlptq"]
-texture = ExtResource("2_1sjpd")
-texture_margin_left = 5.0
-texture_margin_top = 7.0
-texture_margin_right = 5.0
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_25eet"]
+texture = ExtResource("6_lg176")
+texture_margin_left = 10.0
+texture_margin_top = 9.0
+texture_margin_right = 10.0
+texture_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1fyn7"]
+texture = ExtResource("4_5xjp2")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
 texture_margin_bottom = 10.0
 
 [resource]
@@ -58,5 +69,22 @@ Button/styles/disabled = SubResource("StyleBoxEmpty_spcgr")
 Button/styles/hover = SubResource("StyleBoxTexture_14sp7")
 Button/styles/normal = SubResource("StyleBoxTexture_14sp7")
 Button/styles/pressed = SubResource("StyleBoxTexture_gfgyv")
-CheckButton/styles/hover = SubResource("StyleBoxTexture_tlptq")
-CheckButton/styles/hover_pressed = SubResource("StyleBoxTexture_tlptq")
+CheckButton/colors/font_color = Color(0.411765, 0.411765, 0.411765, 1)
+CheckButton/colors/font_outline_color = Color(0.117647, 0.654902, 0.882353, 1)
+CheckButton/constants/check_v_offset = 0
+CheckButton/constants/h_separation = 4
+CheckButton/constants/outline_size = 3
+CheckButton/font_sizes/font_size = 16
+CheckButton/icons/checked = ExtResource("4_q0a1m")
+CheckButton/icons/unchecked = ExtResource("5_3v6gf")
+CheckButton/styles/disabled = SubResource("StyleBoxTexture_25eet")
+CheckButton/styles/focus = SubResource("StyleBoxTexture_25eet")
+CheckButton/styles/hover = SubResource("StyleBoxTexture_25eet")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxTexture_25eet")
+CheckButton/styles/normal = SubResource("StyleBoxTexture_25eet")
+CheckButton/styles/pressed = SubResource("StyleBoxTexture_25eet")
+Label/styles/normal = SubResource("StyleBoxTexture_1fyn7")
+MarginContainer/constants/margin_bottom = 5
+MarginContainer/constants/margin_left = 5
+MarginContainer/constants/margin_right = 5
+MarginContainer/constants/margin_top = 5
