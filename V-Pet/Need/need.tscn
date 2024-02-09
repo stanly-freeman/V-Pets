@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://rcj7wkj1yexg"]
+
+[ext_resource type="Script" path="res://V-Pet/Need/Need.gd" id="1_cg76f"]
+
+[node name="Need" type="Timer"]
+script = ExtResource("1_cg76f")
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]
