@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://833j3wxthhnb"]
+
+[ext_resource type="Theme" uid="uid://c72m8u2jhy782" path="res://UI/Kenny.tres" id="1_35j5a"]
+
+[node name="FeedingUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_35j5a")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -167.0
+offset_right = 176.0
+offset_bottom = -3.0
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="NameLabel" type="LineEdit" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "V-pet Name"
+
+[node name="Status" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Status"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Feed"
+
+[node name="Button2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Button3" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Clean"
+
+[node name="Button4" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sleep"
